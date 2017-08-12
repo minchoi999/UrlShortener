@@ -1,0 +1,10 @@
+﻿@model List<UrlShortener.Models.Url>
+@* Controller will send the above data type as Model object *@
+
+@foreach (var item in Model)
+{
+    <p>@item.Id</p>
+    <p>@item.LongUrl</p>
+    <p>@item.ShortUrl</p>
+    <p>@item.Date</p>
+}
