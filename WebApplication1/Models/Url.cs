@@ -14,6 +14,7 @@ namespace UrlShortener.Models
         public string LongUrl { get; set; }
         public string ShortUrl { get; set; }
         public DateTime Date { get; set; }
+        public string hi { get; }
     }
 
 
