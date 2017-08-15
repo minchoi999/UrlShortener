@@ -4,6 +4,8 @@ using UrlShortener.Models;
 using System.Collections.Generic;
 using UrlShortener.DAL;
 using System.Threading.Tasks;
+using System.Linq;
+using System;
 
 namespace UrlShortener.Controllers
 {
@@ -28,7 +30,18 @@ namespace UrlShortener.Controllers
 
             return View();
         }
+
         // GET: /HelloWorld/Welcome/ 
+       
+        private UrlDbContext db = new UrlDbContext();
+        [HttpGet]
+        public ActionResult RedirectToLong(string shortURL)
+        {
+            Url url = db.Urls.Where(u => u.ShortUrl.Equals(shortURL)).FirstOrDefault();
+            Console.WriteLine(shortURL);
+            return RedirectPermanent(url.LongUrl);
+        }
+
 
 
         public string Welcome()

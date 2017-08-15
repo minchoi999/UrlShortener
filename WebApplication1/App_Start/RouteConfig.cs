@@ -22,16 +22,18 @@ namespace UrlShortener
             // TODO: make views colorful (make them pretty regardless of your workload)
 
             routes.MapRoute(
-                name: "Default",
-                url: "{controller}/{action}/{id}",
-                defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional }
+                name: "URL",
+                url: "RedirectTo/{shortURL}",
+                defaults: new { controller = "Home", action = "RedirectToLong", id = UrlParameter.Optional }
             );
 
             routes.MapRoute(
-                name: "URL",
-                url: "{shortURL}",
-                defaults: new { controller = "Home", action = "RedirectToLong", shortURL = UrlParameter.Optional }
-            );
+               name: "Default",
+               url: "{controller}/{action}/{id}",
+               defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional }
+           );
+
+
         }
     }
 }
