@@ -1,0 +1,20 @@
+For August 19, 2017 tentative at 11:00 AM
+
+1. fix navbar not displaying collapsible menu when browser width is small
+
+2. fix all runtime exceptions in all actions in Urls controller (actions except Delete are broken)
+
+3. please make all actions in Urls controller prettier... make buttons consistent, make input forms more consistent, make 
+   everything more user-friendly (just urls controller side)
+
+4. [Optional] modify Urls/Index to display a list of Urls in a DataTable format (use https://datatables.net)
+
+5. implement front-end input validation on Urls/Create to only submit Url pattern to the server
+   - you can either use jQuery validate
+     - easier, but you might have hard time setting it up, because you need configure all the settings before using it
+     - https://jqueryvalidation.org/
+   - you can also use your custom javascript file to test input against RegEx
+     - more difficult, and you will have hard time thinking about how to actually use RegEx
+     - http://regexr.com/
+     - https://developer.mozilla.org/en/docs/Web/JavaScript/Guide/Regular_Expressions
+     - https://jsfiddle.net/7d7t6wud/
