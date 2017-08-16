@@ -97,9 +97,6 @@ C:\Users\minky\Dev\UrlShortner\WebApplication1\bin\roslyn\vbc.exe.config
 C:\Users\minky\Dev\UrlShortner\WebApplication1\bin\roslyn\vbc.rsp
 C:\Users\minky\Dev\UrlShortner\WebApplication1\bin\roslyn\VBCSCompiler.exe
 C:\Users\minky\Dev\UrlShortner\WebApplication1\bin\roslyn\VBCSCompiler.exe.config
-C:\Users\minky\Dev\UrlShortner\WebApplication1\bin\WebApplication1.dll.config
-C:\Users\minky\Dev\UrlShortner\WebApplication1\bin\WebApplication1.dll
-C:\Users\minky\Dev\UrlShortner\WebApplication1\bin\WebApplication1.pdb
 C:\Users\minky\Dev\UrlShortner\WebApplication1\bin\Antlr3.Runtime.dll
 C:\Users\minky\Dev\UrlShortner\WebApplication1\bin\EntityFramework.dll
 C:\Users\minky\Dev\UrlShortner\WebApplication1\bin\EntityFramework.SqlServer.dll
@@ -141,5 +138,8 @@ C:\Users\minky\Dev\UrlShortner\WebApplication1\bin\Microsoft.AI.Web.xml
 C:\Users\minky\Dev\UrlShortner\WebApplication1\obj\Debug\UrlShortener.csprojResolveAssemblyReference.cache
 C:\Users\minky\Dev\UrlShortner\WebApplication1\obj\Debug\UrlShortener.Migrations.initial.resources
 C:\Users\minky\Dev\UrlShortner\WebApplication1\obj\Debug\UrlShortener.csproj.GenerateResource.Cache
-C:\Users\minky\Dev\UrlShortner\WebApplication1\obj\Debug\WebApplication1.dll
-C:\Users\minky\Dev\UrlShortner\WebApplication1\obj\Debug\WebApplication1.pdb
+C:\Users\minky\Dev\UrlShortner\WebApplication1\bin\UrlShortener.dll.config
+C:\Users\minky\Dev\UrlShortner\WebApplication1\bin\UrlShortener.dll
+C:\Users\minky\Dev\UrlShortner\WebApplication1\bin\UrlShortener.pdb
+C:\Users\minky\Dev\UrlShortner\WebApplication1\obj\Debug\UrlShortener.dll
+C:\Users\minky\Dev\UrlShortner\WebApplication1\obj\Debug\UrlShortener.pdb
