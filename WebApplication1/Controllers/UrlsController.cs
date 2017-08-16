@@ -146,7 +146,19 @@ namespace UrlShortener.Controllers
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Url url = db.Urls.Find(id);
+            int urlId;
+            try
+            {
+                urlId = Convert.ToInt32(id);
+            } catch (Exception ex)
+            {
+                if (ex is OverflowException || ex is FormatException)
+                {
+                    return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
+                }
+                throw;
+            }
+            Url url = db.Urls.Find(urlId);
             if (url == null)
             {
                 return HttpNotFound();
@@ -159,7 +171,20 @@ namespace UrlShortener.Controllers
         [ValidateAntiForgeryToken]
         public ActionResult DeleteConfirmed(string id)
         {
-            Url url = db.Urls.Find(id);
+            int urlId;
+            try
+            {
+                urlId = Convert.ToInt32(id);
+            }
+            catch (Exception ex)
+            {
+                if (ex is OverflowException || ex is FormatException)
+                {
+                    return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
+                }
+                throw;
+            }
+            Url url = db.Urls.Find(urlId);
             db.Urls.Remove(url);
             db.SaveChanges();
             return RedirectToAction("Index");
