@@ -20,6 +20,11 @@ namespace UrlShortener.Controllers
                 return View(await db.Urls.ToListAsync());
             }
         }
+
+        public async Task<ActionResult> Contact()
+        {
+            return View();
+        }
         [HttpPost]
         public ActionResult Index(FormCollection fc, string LongUrl, string ShortUrl)
         {
