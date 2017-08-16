@@ -23,8 +23,9 @@ namespace UrlShortener
 
             routes.MapRoute(
                 name: "URL",
-                url: "RedirectTo/{shortURL}",
-                defaults: new { controller = "Home", action = "RedirectToLong", id = UrlParameter.Optional }
+                url: "{shortURL}",
+                defaults: new { controller = "Home", action = "RedirectToLong" },
+                constraints: new { shortURL = @"^\w{6}$" }
             );
 
             routes.MapRoute(
