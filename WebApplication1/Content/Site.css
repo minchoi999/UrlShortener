@@ -21,12 +21,17 @@
 input,
 select,
 .navbar-inverse {
-    background-color: #1225EC;
+    background-color: black;
 }
 .nav a {
     color: white !important;
-    font-size: 1.8em !important;
+    font-size: 1em !important;
 }
 textarea {
     max-width: 280px;
+}
+
+.logo-image {
+    width: auto;
+    height: 20px;
 }
